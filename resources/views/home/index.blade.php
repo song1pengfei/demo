@@ -26,7 +26,8 @@
                 <div id="site_nav_top">代码改变世界</div>
                 <div id="login_area">
 
-                    <span id="span_userinfo"> @if(session('homeuser')) <a href="{{url('home/personal')}}"> {{session('homeuser')->account}}</a>·<a id="user_nav_blog_link" href="{{url('home/detail')}}">我的博客</a>·<a href="/home/logout">退出</a> @else [<a href="{{URL('home/login')}}"> 登陆 </a>·<a href="{{url('home/register')}}">注册</a>]</span>@endif
+
+                   <span id="span_userinfo"> @if(session('homeuser')) <a href="{{url('home/personal')}}"> {{session('homeuser')->account}}</a>·<a id="user_nav_blog_link" href="{{url('home/detail')}}">我的博客</a>·<a href="/home/logout">退出</a> @else [<a href="{{URL('home/login')}}"> 登陆 </a>·<a href="{{url('home/register')}}">注册</a>]</span>@endif
 
 
                 </div>
@@ -45,9 +46,11 @@
             <div id="logo">
                 <h1>
 
+
                     <a href="" title="开发者的网上家园"><img src="{{asset('images/logo_small.gif')}}"
 
                     alt="博客园Logo" width="142" height="55"></a>
+
                 </h1>
             </div>
 
@@ -95,7 +98,9 @@
                 <img width="48" height="48" class="pfs" src="{{url('images/20170329141435.png')}}" alt=""></a>    摘要 版本格式：主版本号.次版本号.修订号，版本号递增规则如下： 主版本号：当你做了不兼容的 API 修改， 次版本号：当你做了向下兼容的功能性新增， 修订号：当你做了向下兼容的问题修正。 先行版本号及版本编译信息可以加到“主版本号.次版本号.修订号”的后面，作为延伸。 简介 在软件管理的领域里存在 ...
         </p>              
        <div class="post_item_foot">                    
-            <a href="http://www.cnblogs.com/sunsky303/" class="lightblue">{{$v->author}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> 发布于 {{$v->addtime}}
+
+            <a href="" class="lightblue">{{$v->author}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>发布于 {{$v->addtime}}
+
             
     
         <span class="article_comment"> 

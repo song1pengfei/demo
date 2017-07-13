@@ -6,7 +6,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UT	F-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+
 		<title>博客园</title>
+
 
 
 		<link type="text/css" rel="stylesheet" href="{{asset('css/blog-common.css')}}">
@@ -41,7 +43,9 @@
 		<ul id="navList">
 			<li><a id="blog_nav_sitehome" class="menu" href="{{url('home')}}">博客园</a></li>
 			<li><a id="blog_nav_myhome" class="menu" href="{{url('home/list')}}">首页</a></li>
-			<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="{{url('home/list/create')}}">发布</a></li>
+
+			<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="{{url('home/detail/create')}}">发布</a></li>
+
 			<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/fnxz/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>-->
 			<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="{{url('home/detail')}}">管理</a></li>
 		</ul>
@@ -96,7 +100,9 @@
 			<h3 class="catListTitle">公告</h3>
 			<div id="blog-news">
 				<div id="profile_block">
-					昵称：<a href="http://home.cnblogs.com/u/fnxz/">冯强0_0</a><br>
+
+					昵称：<a href="http://home.cnblogs.com/u/fnxz/">{{session('homeuser')->account}}</a><br>
+
 					园龄：<a href="http://home.cnblogs.com/u/fnxz/" title="入园时间：2017-06-22">6天</a><br>
 					粉丝：<a href="http://home.cnblogs.com/u/fnxz/followers/">0</a><br>
 					关注：<a href="http://home.cnblogs.com/u/fnxz/followees/">0</a>
@@ -147,8 +153,10 @@
 					<tr>
 						<td class="CalWeekendDay" align="center">4</td>
 						<td align="center">5</td>
-						<td align="center">6</td><
-						td align="center">7</td>
+
+						<td align="center">6</td>
+						<td align="center">7</td>
+
 						<td align="center">8</td>
 						<td align="center">9</td>
 						<td class="CalWeekendDay" align="center">10</td>
@@ -282,7 +290,9 @@
 						<div id="footer">
 				
 		<!--done-->
-			Copyright ©2017 冯强0_0
+
+			{{session('homeuser')->account}}
+
 			</div><!--end: footer -->
 		</div><!--end: home 自定义的最大容器 -->
 

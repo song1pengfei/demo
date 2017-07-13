@@ -27,7 +27,9 @@
                       <th style="width:60px">ID</th>
                       <th>用户id</th>
                       <th>用户名</th>
+
                       <th>电话</th>
+
                       <th>年龄</th> 
                       <th>性别</th>
                       <th>图片</th>
@@ -40,11 +42,13 @@
                     <tr>
                       <td>{{$v->id}}</td>
                       <td>{{$v->userid}}</td>
+
                       <td>{{$v->account}}</td> 
                       <td>{{$v->phone}}</td>
                       <td>{{$v->age}}</td>       
                       <td>{{$v->sex}}</td>
                       
+
                       <td>{{$v->pic}}</td>
                       
                       

@@ -9,15 +9,6 @@ use App\Model\Adminer;
 class LoginController extends Controller
 {
 
-    /* public function login()
-    {
-        return view("home.login");
-    } */
-
-
-   
-
-
 
     public function login(Request $request)
     {
@@ -31,6 +22,7 @@ class LoginController extends Controller
         } 
 		
     } 
+
 
         //执行用户登录
    public function doLogin(Request $request)

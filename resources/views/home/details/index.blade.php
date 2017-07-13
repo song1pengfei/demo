@@ -26,13 +26,11 @@
 	<!--end: blogTitle 博客的标题和副标题 -->
 	<div id="navigator">		
 <ul id="navList">
-<li><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
-<li><a id="blog_nav_myhome" class="menu" href="{{url('home')}}">首页</a></li>
-<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+
+<li><a id="blog_nav_sitehome" class="menu" href="{{url('home')}}">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="{{url('home/list')}}">首页</a></li>
 <li></li>
-<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/f-ck-need-u/rss">订阅</a>
-<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/f-ck-need-u/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
-<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+
 </ul>
 		<div class="blogStats">			
 		</div><!--end: blogStats -->
@@ -89,9 +87,10 @@
 
 <span id="tip_comment" style="color:Red"></span>
 <p>
-@if(session('User'))
-昵称：<input type="text" id="tbCommentAuthor" class="author" disabled="disabled" size="50" value="{{session('User')->account}}">
-@endif
+
+@if(session('homeuser'))
+昵称：<input type="text" id="tbCommentAuthor" class="author" disabled="disabled" size="50" value="{{session('homeuser')->account}}">
+
 </p>
 <div class="commentbox_main" style="float:left">
 <div class="commentbox_title">
@@ -103,15 +102,21 @@
 
 <form id="dd" >
 <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+@foreach($art as $ve)
 <input type="hidden" name="articleid" value="{{$ve->id}}">	
 <input type="hidden" name="articleid" value="{{$ve->title}}">
+@endforeach	
+
 <textarea id="ds" name="content" class="comment_textarea">
 
 </textarea>
 <textarea id="answertable" class="comment_textarea" readonly> 
-@if(session('User'))
+
+@if(session('homeuser'))
 @foreach($list as $vo)
-昵称:{{session('User')->account}}	
+昵称:{{session('homeuser')->account}}	
+
 {{$vo->content}}                 
 @endforeach 
 @endif
@@ -191,8 +196,10 @@
 
 <div class="newsItem">
 <h3 class="catListTitle">公告</h3>
-@if(session('User'))
-	<div id="blog-news"></a><div id="profile_block">昵称{{session('User')->account}}<br></div></div>
+
+@if(session('homeuser'))
+	<div id="blog-news"></a><div id="profile_block">昵称:{{session('homeuser')->account}}<br></div></div>
+
 @endif
 </div>
 

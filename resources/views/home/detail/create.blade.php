@@ -1,6 +1,7 @@
 
 @extends('home.detail.base');
 
+
   @section('content')
 		<form method="post" action="{{URL('home/detail/store')}}" id="frmMain">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">

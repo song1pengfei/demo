@@ -28,7 +28,9 @@
 						</div>
 					</td> 
 					<td class="top-line">
+
 						<a class="btn btn-hollow"><input unselectable="on" type="file" name="pic" class="hide">更改头像</a>
+
 					
 					</td>
 				</tr> 
@@ -64,7 +66,9 @@
 						<input type="text" name="phone" value="{{$list->phone}}">
 							<!--<i class="iconfont ic-collections-followed"></i> -->
 							<!--<span>已验证</span>--> 
+
 							<!-- <a class="cancel-bind">更换手机</a> -->
+
 
 					</td>
 				</tr> 

@@ -1,11 +1,11 @@
 
-@extends('home.detail.base');
+@extends('home.detail.base')
+
 
   @section('content')
 		<form method="post" action="{{URL('home/detail')}}/{{ $list->id }}" id="frmMain">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 		 <input type="hidden" name="_method" value="put">
-
 
 
 								<div id="Editor_Edit">
@@ -35,9 +35,9 @@
 											<br>
 											<textarea   cols="190" name="content"  rows="20" contenteditable="true">{{ $list->content }}</textarea>
 										</div>
-									
-											<!--<script src="{{asset('homes/js/paste-upload-image.js')}}"></script>
-											<script>$('#Editor_Edit_EditorBody').pasteUploadImage('www.cnblogs.com');</script>-->
+
+				
+
 										</div>
 									</div>
 								</div>
@@ -57,28 +57,8 @@
 								</div>
 
 							</form>
-
 						<span id="currentPostId" style="display:none;"></span>
 
-
-
-
-
-
-				<!--		<script type="text/javascript">    
-							$(function () {
-								if (isEdit) {
-									document.getElementById('Editor_Edit_txbTitle').focus();
-									if (currentUseEditor == 1) {
-										var editor1 = document.getElementById(currentEditorId);
-										if (editor1.IsReady) CuteEditor_OnInitialized(editor1);
-									}
-									setInterval(localPreserver.saveDraftBody, 10000);
-									localPreserver.showViewTip();            
-								}
-								
-							});
-						</script》 -->
 
 						</div>
 					</td>

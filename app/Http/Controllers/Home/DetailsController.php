@@ -54,7 +54,12 @@ class DetailsController extends Controller
     public function show($id)
 	{
 		//echo "111";
+
+		//$art = Article::where("userid","=",$id)->get();
+		
 		$art = Article::where("userid","=",$id)->get();
+		
+
 		$ar = contents::where("userid","=",$id)->get();	
 		$list = discusstab::where('status', 2)->get();
 		return view("home.details.index",['art'=>$art,'ar'=>$ar,'list'=>$list]);	

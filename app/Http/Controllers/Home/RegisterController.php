@@ -22,9 +22,23 @@ class RegisterController extends Controller
         
 	
         //获取要添加的数据
-        
+
+        //$username = $request->input('username');
+		//$password = $request->input('password');
+		
+
         $data = $request->only("phone","password","account");
         $data['password'] = md5($data['password']);
+		/* 		//登录表单验证
+		$validator = Validator::make($request->all(), [
+		'account' => 'required|alpha_num|regex:/^(?!([A-Za-z]+|d\d+)$)[A-Za-z\d]$/',]);  //只允许数字和字母
+		
+		//表单验证失败提示
+		if ($validator->fails()) {
+		echo  $info = "表单验证失败提示";
+		} */
+		
+
         $data['enrolltime']=date("Y-m-d H:i:s",time());
         
         $id = User::insertGetId($data);

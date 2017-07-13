@@ -11,6 +11,9 @@
             <script src="{{asset('js/json2.js')}}" type="text/javascript"></script>      
             <script type="text/javascript" src="{{asset('js/jquery.cnblogs.thickbox.js')}}"></script>
 			<script type="text/javascript" src="{{asset('js/admin.js')}}"></script>
+
+			<link href="{{asset('myadmin/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" /> 
+
 	</head>	
 	<body id="Articles">
 		
@@ -35,11 +38,16 @@
 								<div id="SiteTitle">
 									<a id="TitleLink" href="http://www.cnblogs.com/"><img src="{{asset('images/adminlogo.gif')}}" alt=""></a>
 								</div>
+
+
+								<br/><br/><br/><br/>
 							</td>
+
 						</tr>
 						<tr>
 							<td>
-								<div id="LeftNavHeader">操作</div>
+								<div  id="LeftNavHeader">操作</div>
+
 							</td>
 							<td class="NavHeaderRow">
 								<ul id="TopNav">			
@@ -79,6 +87,18 @@
 										<li><a href="https://i.cnblogs.com/EditArticles.aspx?catid=-2">[未分类]</a></li>
 									</ul>
 								</div>
+
+								<div id="CategoriesHeader" class="LeftNavHeader">
+									文章状态
+								</div>
+								<div class="left_nav">
+									<ul id="LinksCategories">
+										<li><a href="{{url('detail/through')}}">[已通过的文章]</a></li>
+										<li><a href="{{url('detail/nothrough')}}">[未通过的文章]</a></li>
+										<li><a href="{{url('detail/daithrough')}}">[待审核的文章]</a></li>
+									</ul>
+								</div>
+
 							</td>
 							<td id="Body">
 								<div id="Main">

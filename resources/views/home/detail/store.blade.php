@@ -106,7 +106,9 @@
 			</tbody></table>
             <div id="blog_top_nav_block">
                 <div id="site_nav">
+
                 <a href="">网站首页</a>
+
                 <a href="">园子</a>
                 <a href="">新闻</a>
              

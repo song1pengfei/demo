@@ -180,6 +180,8 @@ return [
       
 		Barryvdh\Debugbar\ServiceProvider::class,
 
+		//iscms\Alisms\AlidayuServiceProvider::class
+
 		iscms\Alisms\AlidayuServiceProvider::class,
 		zgldh\QiniuStorage\QiniuFilesystemServiceProvider::class,
 

@@ -8,7 +8,9 @@ use App\Model\Userinfo;
 use App\Model\User;
 use App\Http\Requests;
 use DB;
+
 use zgldh\QiniuStorage\QiniuStorage;
+
 
 
 class PersonalController extends Controller
@@ -20,9 +22,11 @@ class PersonalController extends Controller
 		//用session获取当前登录用户的ID
 	    
         $id = session("homeuser")->id;
+
         //dd($id);
         
         
+
         $list = Userinfo::where("userid",$id)->first();
          //echo "<pre>";
          //print_r($list);
@@ -43,6 +47,7 @@ class PersonalController extends Controller
     
     public function store(Request $request)
     {
+
 
         /*$InsertUserinfo = new Userinfo;
         //判断是否有文件上传
@@ -98,10 +103,12 @@ class PersonalController extends Controller
 
     {   
         $id = session("homeuser")->id;
+
         //echo 'aaaa';
         //var_dump($_REQUEST);    
         //执行修改，
         $data = $request->only("account","email","age","sex");
+
         $date = $request->only("account","phone");
          //dd($data);
         $aa = \DB::table("userinfo")->where("userid",$id)->update($data);
@@ -113,6 +120,7 @@ class PersonalController extends Controller
         else{
             return back()->with("err","修改失败!");
         }
+
 
     }
 
