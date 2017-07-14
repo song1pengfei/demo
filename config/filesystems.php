@@ -53,7 +53,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL').'/bokeke/storage/app/public',
             'visibility' => 'public',
         ],
 
@@ -78,7 +78,9 @@ return [
 			'access_key'=> env('QINIU_AK'),  //AccessKey
             'secret_key'=> env('QINIU_SK'),  //SecretKey
 
+
             'bucket'    => env ('QINIU_BK'),  //Bucket名字
+
 
 
 

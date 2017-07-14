@@ -17,7 +17,13 @@ Route::get('/home/login',"Home\LoginController@login");//加载前台登录界�
 Route::post('/home/dologin',"Home\LoginController@doLogin"); //执行前台登录
 Route::get('/home/logout',"Home\LoginController@logout"); //执行退出
 Route::get('/home/getcode',"Home\LoginController@getCode");//加载验证码
+Route::get('detail/through',"Home\DetailController@through");//加载已通过文章页面
+Route::get('detail/nothrough',"Home\DetailController@nothrough");//加载未通过文章页面
+Route::get('detail/daithrough',"Home\DetailController@daithrough");//加载待审核文章页面
 
+Route::get('/home/register',"Home\RegisterController@index");//注册表管理
+Route::post('/home/add',"Home\RegisterController@store");//注册表管理
+Route::get('/home/ali',"Home\RegisterController@Alidayu");
 
 
 Route::get('/admin/login',"Admin\LoginController@login");//加载后台登录界面
@@ -47,9 +53,11 @@ Route::group(['prefix' => 'home','middleware' => 'home'], function () {
 
 	
 	
-	Route::resource('register',"Home\RegisterController");//注册表管理
 	
+	
+	//Route::get('/home/register','Home\RegisterController@Alidayu');
 });
+//Route::get('/home/phone','Home\RegisterController@Alidayu');
 
 //建立后台路由组
 Route::group(['prefix' => 'admin','middleware' => 'admin'], function () {
@@ -99,5 +107,10 @@ Route::get('/upload', 'UploadController@index');
 
 
 Route::post('/upload/put', 'UploadController@uploads');
+
+
+/* Route::get('/home/ali', function () {
+    return 'Hello World';
+}); */
 
 

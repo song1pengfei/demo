@@ -1,301 +1,154 @@
 <!DOCTYPE html>
-<!-- saved from url=(0028)http://www.cnblogs.com/fnxz/ -->
-	<html lang="zh-cn">
-	<head>
+<!-- saved from url=(0022)http://blog.enqoo.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-		<meta http-equiv="Content-Type" content="text/html; charset=UT	F-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="initial-scale=1, minimum-scale=1, user-scalable=no, maximum-scale=1, width=device-width" name="viewport">
+<link rel="shortcut icon" href="http://blog.enqoo.com/wp-content/themes/enqooblog2014/favicon.ico"> 
+<link rel="pingback" href="http://blog.enqoo.com/xmlrpc.php">
+<link rel="pingback" href={{asset('liebiao/main.266c1c.css')}}>
+<title>
+</title>
 
+	<link rel="stylesheet" href="{{asset('liebiao/style.css')}}">
+    <script type="text/javascript" src="{{asset('liebiao/analytics.js')}}"></script>
+    <script type="text/javascript" src="{{asset('liebiao/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{asset('liebiao/enqooblog.js')}}"></script>
+	<!--[if lt IE 9]>
+		<script src="http://blog.enqoo.com/wp-content/themes/enqooblog2014/js/html5.js"></script>
+        <script src="http://blog.enqoo.com/wp-content/themes/enqooblog2014/js/css3-mediaqueries.js"></script>
+	<![endif]-->
+<link rel="dns-prefetch" href="http://s.w.org/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/blog.enqoo.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b===c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="{{asset('liebiao/wp-emoji-release.min.js')}}" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="crayon-css" href="{{asset('liebiao/crayon.min.css')}}" type="text/css" media="all">
+<script type="text/javascript" src="{{asset('liebiao/jqueryy.js')}}"></script>
+<script type="text/javascript" src="{{asset('liebiao/jquery-migrate.min.js')}}"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"http:\/\/blog.enqoo.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u7528 %s \u7c98\u8d34\u3002","minimize":"\u70b9\u51fb\u5c55\u5f00\u4ee3\u7801"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="{{asset('liebiao/crayon.min.js')}}"></script>
+<link rel="https://api.w.org/" href="http://blog.enqoo.com/wp-json/">
 
-		<title>博客园</title>
+</head>
+<body class="home blog">
 
+    <div class="container wrap">
+    <header>
+            <div class="eq-row">
+                <div id="logo">
+                    <!-- blog标题 -->
+                    <a href="http://blog.enqoo.com/">
+                        <img src="{{asset('liebiao/adminlogo.gif')}}" >
+                    </a>
+                    <!-- blog描述
+                    网站设计 |  Photoshop 教程  | 设计技巧 -->
+                </div>
+                
+                <div class="nav">
+                    <a href="http://blog.enqoo.com/#" id="pull"></a><!-- 响应式导航 -->
+                    <ul class="page">
+                        <li class="page_item page-item-1140"><a href="{{url('home')}}">博客园</a></li> &nbsp;&nbsp; &nbsp;&nbsp;
+                        <li class="categories"><a href="{{url('home/list')}}" class="cat-nav">首页</a></li>
+                       
+                        <li class="categories"><a href="{{url('home/detail')}}" class="cat-nav">管理</a></li>
+                        </ul>
+                    
+                </div>
+                <form role="search" method="get" id="searchform" action="http://blog.enqoo.com/">
+        <input type="search" placeholder="搜索..." value="" name="s" id="search">
+        <input type="submit" id="searchsubmit" value="搜索">
+</form>    
+            </div><!-- eq-row end --> 
+    </header>
 
+     
+         <div class="eq-row main">
+             <div class="eq-g4x3">
+                 <div class="mainContent">
+                 
+                  
+                 
+                          @foreach ($list as $v)
+                 
+                 
+                                  <div class="post" id="post-15022"><!-- post id 用于定义某篇日志 -->
+                     
+                     <h1><a href="http://blog.enqoo.com/blog/2016/04/26/beautiful-vintage-design-showcase-and-resources/" title="优雅的复古设计：灵感展示及资源">{{$v->title}}</a></h1> <!-- 如果有博客，输出日志标题 -->
+                     
+                     <ul class="postmeta clearfix">
+                         <li class="date">04/26/2016</li>
+                         <li class="category"><a href="http://blog.enqoo.com/blog/category/cool-site/" rel="category tag">灵感酷站</a>, <a href="http://blog.enqoo.com/blog/category/design-resource/" rel="category tag">设计资源</a></li>
+                         <li class="comments"><a href="http://blog.enqoo.com/blog/2016/04/26/beautiful-vintage-design-showcase-and-resources/#comments">1 评论</a></li>
+                         <li></li>
+                     </ul><!-- postmeta end-->
+                     
+                     <div class="entry">
+                     <p>{{$v->author}}
+<p><img class="aligncenter size-full wp-image-15023" src="{{asset('liebiao/1-11.jpg')}}" alt="1" width="600" height="285" srcset="http://blog.enqoo.com/wp-content/uploads/2016/04/1-11.jpg 600w, http://blog.enqoo.com/wp-content/uploads/2016/04/1-11-300x143.jpg 300w" sizes="(max-width: 600px) 100vw, 600px"></p>
+<p>&nbsp;</p>
+<h3> <a href="{{url('/home/details')}}/{{$v->id}}" class="more-link">阅读全文…</a></h3>
+<!-- 输出日志内容 -->
+                        
+                     </div>
+                     
+                     <div class="tags clearfix">
+                           <a href="http://blog.enqoo.com/blog/tag/%e7%95%8c%e9%9d%a2%e8%ae%be%e8%ae%a1/" rel="tag">界面设计</a>, <a href="http://blog.enqoo.com/blog/tag/web%e8%ae%be%e8%ae%a1/" rel="tag">网页设计</a>, <a href="http://blog.enqoo.com/blog/tag/%e8%ae%be%e8%ae%a1%e7%81%b5%e6%84%9f/" rel="tag">设计灵感</a> 
+                     </div>
+                     
+                 </div><!-- post end -->
+                 @endforeach
+                                  
+                 <div class="pagination">
+                    <a href="http://blog.enqoo.com/" class="current">1</a><a href="http://blog.enqoo.com/page/2/">2</a><a href="http://blog.enqoo.com/page/3/">3</a><a href="http://blog.enqoo.com/page/4/">4</a><a href="http://blog.enqoo.com/page/5/">5</a><a href="http://blog.enqoo.com/page/2/"> 下一页 </a><a href="http://blog.enqoo.com/page/81/" class="extend" title="跳转到最后一页"> 最后一页 </a>                 </div>
+                 
+                                 </div><!-- mainContent end -->
+             </div><!-- eq-g4x3 end -->
+             
+                 <div class="eq-g4">
+    <div class="sidebar">
+    <ul>
+        <li id="text-2" class="widget widget_text">			<div class="textwidget"><div class="sidebar-banner">
 
-		<link type="text/css" rel="stylesheet" href="{{asset('css/blog-common.css')}}">
-		<link id="MainCss" type="text/css" rel="stylesheet" href="{{asset('css/bundle-SimpleMemory.css')}}">
-		<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="{{asset('css/bundle-SimpleMemory-mobile.css')}}">
-		<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/fnxz/rss">
-		<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/fnxz/rsd.xml">
-		<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/fnxz/wlwmanifest.xml">
-		<script async="" src="{{asset('js/analytics.js')}}"></script>
-		<script src="{{asset('js/jquery.js')}}" type="text/javascript"></script>  
-		<script type="text/javascript">var currentBlogApp = 'fnxz', cb_enable_mathjax=false;var isLogined=true;</script>
-		<script src="{{asset('js/blog-common.js')}}" type="text/javascript"></script>
-	</head>
-	<body>
-		<a name="top"></a>
-		<!--done-->                                                          
-		<div id="home">
-		<div id="header">
-			<div id="blogTitle">
-			<!--<a id="lnkBlogLogo" href="http://www.cnblogs.com/fnxz/"><img id="blogLogo" src="{{asset('images/logo.gif')}}" alt="返回主页"></a>-->
-				
-		<!--done-->
+</div></div>
+		</li>
 
+    </ul>
+    </div><!-- sidebar end -->
+</div>             
+         </div><!-- eq-row end -->
+         <footer>
+Copyright © 2017  <a href="http://www.enqoo.com/" target="_blank">Enqoo Inc.</a> All Rights Reserved.
 
-		<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="{{url('home/personal')}}">{{session('homeuser')->account}}</a></h1>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-22337385-3', 'enqoo.com');
+  ga('send', 'pageview');
 
-		<h2></h2>
-			</div><!--end: blogTitle 博客的标题和副标题 -->
-		<div id="navigator">
-		
-		<ul id="navList">
-			<li><a id="blog_nav_sitehome" class="menu" href="{{url('home')}}">博客园</a></li>
-			<li><a id="blog_nav_myhome" class="menu" href="{{url('home/list')}}">首页</a></li>
+</script>
+    
+</footer>     </div><!-- container end -->
 
-			<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="{{url('home/detail/create')}}">发布</a></li>
-
-			<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/fnxz/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>-->
-			<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="{{url('home/detail')}}">管理</a></li>
-		</ul>
-		<div class="blogStats">
-		<div id="blog_stats">
-			<span id="stats_post_count">随笔 - 0&nbsp; </span>
-			<span id="stats_article_count">文章 - 0&nbsp; </span>
-			<span id="stats-comment_count">评论 - 0</span>
-		</div>
-			
-		</div><!--end: blogStats -->
-		</div><!--end: navigator 博客导航栏 -->
-		</div><!--end: header 头部 -->
-
-		<div id="main">
-		<div id="mainContent">
-		<div class="forFlow">
-		
-
-<!--done-->
-
-			@foreach ($list as $v)		
-			<div class="day">
-				
-			<div class="postTitle">
-					<a id="homepage1_HomePageDays_DaysList_ctl00_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/fnxz/p/7086949.html">{{$v->title}}</a>
-			</div>
-			<div class="postTitle">
-					<a id="homepage1_HomePageDays_DaysList_ctl00_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/fnxz/p/7086949.html">{{$v->picname}}</a>
-			</div>
-			<div class="postTitle">
-					<a id="homepage1_HomePageDays_DaysList_ctl00_DayList_TitleUrl_0" class="postTitle2" href="http://www.cnblogs.com/fnxz/p/7086949.html">{{$v->author}}</a>
-			</div>
-			<div class="clear"></div>
-			<div class="postDesc">posted @ 2017-06-27 20:15 冯强0_0 阅读(4) 评论(0)  
-					<a href="https://i.cnblogs.com/EditPosts.aspx?postid=7086949" rel="nofollow">编辑</a></div>
-			<div class="clear"></div>
-					
-			</div>
-			  @endforeach
-
-			<div class="topicListFooter"></div>
-
-
-			</div><!--end: forFlow -->
-			</div><!--end: mainContent 主体内容容器-->
-
-			<div id="sideBar">
-				<div id="sideBarMain">
-			<!--done-->
-		<div class="newsItem">
-			<h3 class="catListTitle">公告</h3>
-			<div id="blog-news">
-				<div id="profile_block">
-
-					昵称：<a href="http://home.cnblogs.com/u/fnxz/">{{session('homeuser')->account}}</a><br>
-
-					园龄：<a href="http://home.cnblogs.com/u/fnxz/" title="入园时间：2017-06-22">6天</a><br>
-					粉丝：<a href="http://home.cnblogs.com/u/fnxz/followers/">0</a><br>
-					关注：<a href="http://home.cnblogs.com/u/fnxz/followees/">0</a>
-					<div id="p_b_follow"></div>
-				</div>
-			</div>
-					<script type="text/javascript">loadBlogNews();</script>
-		</div>
-
-		<div id="blog-calendar" style="">
-			<table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="Calendar">
-				<tbody>
-					<tr>
-						<td colspan="7">
-							<table class="CalTitle" cellspacing="0">
-								<tbody>
-									<tr>
-										<td class="CalNextPrev">
-											<a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2017/05/01&#39;);return false;">&lt;</a>
-										</td>
-										<td align="center">2017年6月</td>
-										<td class="CalNextPrev" align="right">
-											<a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2017/07/01&#39;);return false;">&gt;</a>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<th class="CalDayHeader" align="center" abbr="日" scope="col">日</th>
-						<th class="CalDayHeader" align="center" abbr="一" scope="col">一</th>
-						<th class="CalDayHeader" align="center" abbr="二" scope="col">二</th>
-						<th class="CalDayHeader" align="center" abbr="三" scope="col">三</th>
-						<th class="CalDayHeader" align="center" abbr="四" scope="col">四</th>
-						<th class="CalDayHeader" align="center" abbr="五" scope="col">五</th>
-						<th class="CalDayHeader" align="center" abbr="六" scope="col">六</th>
-					</tr>
-					<tr>
-						<td class="CalOtherMonthDay" align="center">28</td>
-						<td class="CalOtherMonthDay" align="center">29</td>
-						<td class="CalOtherMonthDay" align="center">30</td>
-						<td class="CalOtherMonthDay" align="center">31</td>
-						<td align="center">1</td>
-						<td align="center">2</td>
-						<td class="CalWeekendDay" align="center">3</td>
-					</tr>
-					<tr>
-						<td class="CalWeekendDay" align="center">4</td>
-						<td align="center">5</td>
-
-						<td align="center">6</td>
-						<td align="center">7</td>
-
-						<td align="center">8</td>
-						<td align="center">9</td>
-						<td class="CalWeekendDay" align="center">10</td>
-					<tr>
-						<td class="CalWeekendDay" align="center">11</td>
-						<td align="center">12</td>
-						<td align="center">13</td>
-						<td align="center">14</td>
-						<td align="center">15</td>
-						<td align="center">16</td>
-						<td class="CalWeekendDay" align="center">17</td>
-					</tr>
-					<tr>
-						<td class="CalWeekendDay" align="center">18</td>
-						<td align="center">19</td>
-						<td align="center">20</td>
-						<td align="center">21</td>
-						<td align="center">22</td>
-						<td align="center">23</td>
-						<td class="CalWeekendDay" align="center">24</td>
-					</tr>
-					<tr>
-						<td class="CalWeekendDay" align="center">25</td>
-						<td align="center">26</td>
-						<td align="center">
-							<a href="http://www.cnblogs.com/fnxz/archive/2017/06/27.html"><u>27</u></a>
-						</td>
-						<td class="CalTodayDay" align="center">28</td><td align="center">29</td>
-						<td align="center">30</td>
-						<td class="CalOtherMonthDay" align="center">1</td>
-					</tr>
-					<tr>
-						<td class="CalOtherMonthDay" align="center">2</td>
-						<td class="CalOtherMonthDay" align="center">3</td>
-						<td class="CalOtherMonthDay" align="center">4</td>
-						<td class="CalOtherMonthDay" align="center">5</td>
-						<td class="CalOtherMonthDay" align="center">6</td>
-						<td class="CalOtherMonthDay" align="center">7</td>
-						<td class="CalOtherMonthDay" align="center">8</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<script type="text/javascript">loadBlogDefaultCalendar();</script>
-					
-					<div id="leftcontentcontainer">
-						<div id="blog-sidecolumn">
-						<div id="sidebar_search" class="sidebar-block">
-						<div id="sidebar_search" class="mySearch">
-							<h3 class="catListTitle">搜索</h3>
-						<div id="sidebar_search_box">
-						<div id="widget_my_zzk" class="div_my_zzk">
-							<input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;
-							<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk">
-						</div>
-
-						</div>
-						</div>
-
-						</div>
-						<div id="sidebar_shortcut" class="sidebar-block">
-							<div class="catListLink">
-							<h3 class="catListTitle">常用链接</h3>
-						<ul>
-							<li>
-								<a href="http://www.cnblogs.com/fnxz/p/" title="我的博客的随笔列表">我的随笔</a>
-							</li>
-							<li>
-								<a href="http://www.cnblogs.com/fnxz/MyComments.html" title="我发表过的评论列表">我的评论</a>
-							</li>
-							<li>
-								<a href="http://www.cnblogs.com/fnxz/RecentComments.html" title="我的博客的评论列表">最新评论</a>
-							</li>
-						</ul>
-						<div id="itemListLin_con" style="display:none;">
-						<ul>
-
-						</ul>
-						</div>
-							</div>
-						</div>
-							<div id="sidebar_toptags" class="sidebar-block"></div>
-							<div id="sidebar_categories">
-							<div id="sidebar_postarchive" class="catListPostArchive sidebar-block">
-
-
-							</div>
-
-							</div>
-						<div id="sidebar_recentcomments" class="sidebar-block"><div id="recent_comments_wrap" style="display: none;">
-						<div class="catListComment">
-						<h3 class="catListTitle">最新评论</h3>
-
-						<div id="RecentCommentsBlock"></div>
-						</div>
-						</div>
-						</div>
-							<div id="sidebar_topviewedposts" class="sidebar-block">
-							<div id="topview_posts_wrap" style="display: none;">
-							<div class="catListView">
-							<h3 class="catListTitle">阅读排行榜</h3>
-								<div id="TopViewPostsBlock"></div>
-							</div>
-							</div>
-							</div>
-							<div id="sidebar_topcommentedposts" class="sidebar-block">
-							<div id="topfeedback_posts_wrap" style="display: none;">
-							<div class="catListFeedback">
-							<h3 class="catListTitle">评论排行榜</h3>
-								<div id="TopFeedbackPostsBlock"></div>
-							</div>
-							</div>
-							</div>
-							<div id="sidebar_topdiggedposts" class="sidebar-block">
-							<div id="topdigg_posts_wrap" style="display: none;">
-							<div class="catListView">
-							<h3 class="catListTitle">推荐排行榜</h3>
-							<div id="TopDiggPostsBlock"></div>
-							</div>
-							</div>
-							</div>
-							</div>
-								<script type="text/javascript">loadBlogSideColumn();</script>
-						</div>
-							
-						</div><!--end: sideBarMain -->
-						</div><!--end: sideBar 侧边栏容器 -->
-						<div class="clear"></div>
-						</div><!--end: main -->
-						<div class="clear"></div>
-						<div id="footer">
-				
-		<!--done-->
-
-			{{session('homeuser')->account}}
-
-			</div><!--end: footer -->
-		</div><!--end: home 自定义的最大容器 -->
-
-
-	</body>
-</html>
+</body></html>
