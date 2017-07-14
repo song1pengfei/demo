@@ -36,7 +36,7 @@
 									<a id="BlogTitleLink" href="http://www.cnblogs.com/fnxz/">{{session('User')}}</a>
 								</div>
 								<div id="SiteTitle">
-									<a id="TitleLink" href="http://www.cnblogs.com/"><img src="{{asset('images/adminlogo.gif')}}" alt=""></a>
+									<a id="TitleLink" href="{{URL('home')}}"><img src="{{asset('images/adminlogo.gif')}}" alt=""></a>
 								</div>
 
 

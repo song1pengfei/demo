@@ -75,10 +75,10 @@ return [
              ],
 
             
-			'access_key'=> env('QINIU_DOMAIN'),  //AccessKey
-            'secret_key'=> env('QINIU_DOMAI'),  //SecretKey
+			'access_key'=> env('QINIU_AK'),  //AccessKey
+            'secret_key'=> env('QINIU_SK'),  //SecretKey
 
-            'bucket'    => env ('QINIU_DOMA'),  //Bucket名字
+            'bucket'    => env ('QINIU_BK'),  //Bucket名字
 
 
 

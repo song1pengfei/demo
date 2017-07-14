@@ -39,7 +39,7 @@ Route::group(['prefix' => 'home','middleware' => 'home'], function () {
     Route::get('delete/{id}',"Home\DetailController@destroy");//文章列表页删除
     Route::post('detail/store',"Home\DetailController@store");//文章添加页
     Route::resource('personal',"Home\PersonalController");//加载前台个人中心
-   
+    Route::post('personal/update/{id}',"Home\PersonalController@update");//加载前台个人中心
 	
 	Route::resource('details',"Home\DetailsController");//详情管理
 	Route::post('discusstab',"Home\DiscusstabController@store");//评论管理

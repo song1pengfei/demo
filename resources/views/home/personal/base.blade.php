@@ -64,7 +64,7 @@
 		<!-- 如果用户登录，显示下拉菜单 -->
 			<div class="user">
 				<div data-hover="dropdown">
-					<a class="avatar" href="http://www.jianshu.com/u/ebd83d2a2318"><img src="{{asset('homes/images/15-a7ac401939dd4df837e3bbf82abaa2a8.jpg')}}" alt="120"></a>
+					<a class="avatar" href="http://www.jianshu.com/u/ebd83d2a2318"><img src="{{env('QINIU_IMG')}}{{$list->pic}}" alt="120"></a>
 				</div>
 				<ul class="dropdown-menu">
 					<li>

@@ -3,11 +3,11 @@
 
   @section('content')
 			
-			<form class="form-horizontal" action="{{URL('home/personal')}}/{{$list->userid}}" method="post">
+			<form class="form-horizontal" action="{{URL('home/personal/update')}}/{{$list->userid}}" method="post" enctype="multipart/form-data">
 			 {{ csrf_field() }}
 
                   <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                  <input type="hidden" name="_method" value="put">
+                  
 			<div class="col-xs-16 col-xs-offset-8 main">
 				<table>
 					<thead>
@@ -23,7 +23,7 @@
 				<tr>
 					<td class="top-line">
 						<div class="avatar">
-							<img src="{{$list->pic}}">
+							<img src="{{env('QINIU_IMG')}}{{$list->pic}}">
 
 						</div>
 					</td> 
