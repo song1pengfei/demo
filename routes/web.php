@@ -17,6 +17,9 @@ Route::get('/home/login',"Home\LoginController@login");//加载前台登录界�
 Route::post('/home/dologin',"Home\LoginController@doLogin"); //执行前台登录
 Route::get('/home/logout',"Home\LoginController@logout"); //执行退出
 Route::get('/home/getcode',"Home\LoginController@getCode");//加载验证码
+Route::get('detail/through',"Home\DetailController@through");//加载已通过文章页面
+Route::get('detail/nothrough',"Home\DetailController@nothrough");//加载未通过文章页面
+Route::get('detail/daithrough',"Home\DetailController@daithrough");//加载待审核文章页面
 
 
 

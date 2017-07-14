@@ -20,8 +20,9 @@ class ListController extends Controller
     public function index()
     {
         //
-		$list = Article::all();
-        return view("home.list.index",['list'=>$list]);
+        $art = Article::get()->where('status',1);
+		$list = Contents::all();
+        return view("home.list.index",['art'=>$art,'list'=>$list]);
     }
 
     /**

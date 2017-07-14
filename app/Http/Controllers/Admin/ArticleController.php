@@ -107,11 +107,11 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request,$id)
     {
         
-        $del = Article::find($id);
-        $del->delete($id); 
+        Article::where('cid',$id)->delete();
+        Contents::where('id',$id)->delete();
         return redirect('admin/article');
     }
 }

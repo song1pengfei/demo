@@ -30,13 +30,17 @@
 						<tr>
 							<td id="Header" colspan="2">
 								<div id="SiteNav">
-									<a href="http://home.cnblogs.com/set/account/" target="_blank">修改密码</a>
-								&nbsp;|&nbsp;</div>
+									<a href="http://home.cnblogs.com/set/account/" target="_blank">个人中心</a>
+								&nbsp;</div>
 								<div id="BlogTitle">
-									<a id="BlogTitleLink" href="http://www.cnblogs.com/fnxz/">{{session('User')}}</a>
+									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					                  <img src="{{asset('myadmin/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image"/>
+					                  <span class="hidden-xs">{{session('homeuser')->account}}</span>
+					                </a>
+									
 								</div>
 								<div id="SiteTitle">
-									<a id="TitleLink" href="http://www.cnblogs.com/"><img src="{{asset('images/adminlogo.gif')}}" alt=""></a>
+									<a id="TitleLink" href="{{url('home/list')}}"><img src="{{asset('images/adminlogo.gif')}}" alt=""></a>
 								</div>
 
 
@@ -50,9 +54,9 @@
 
 							</td>
 							<td class="NavHeaderRow">
-								<ul id="TopNav">			
+								<ul id="TopNav">		
 									<li>
-										<a href="https://i.cnblogs.com/EditArticles.aspx" id="TabArticles">文章</a>
+										<a href="{{url('home/detail')}}" id="TabArticles">文章</a>
 									</li>
 									<li>
 										<a href="https://i.cnblogs.com/Feedback.aspx" id="TabFeedback">评论</a>
@@ -77,16 +81,7 @@
 										<li><a href="{{url('home/detail/create')}}">» 添加新文章</a></li>
 									</ul>
 								</div>
-								<div id="CategoriesHeader" class="LeftNavHeader">
-									分类
-								</div>
-								<div class="left_nav">
-									<ul id="LinksCategories">
-										<li><a href="https://i.cnblogs.com/EditCategories.aspx?catid=2">[编辑分类]</a></li>
-										<li><a href="https://i.cnblogs.com/EditArticles.aspx">[所有分类]</a></li>
-										<li><a href="https://i.cnblogs.com/EditArticles.aspx?catid=-2">[未分类]</a></li>
-									</ul>
-								</div>
+								
 
 								<div id="CategoriesHeader" class="LeftNavHeader">
 									文章状态

@@ -53,7 +53,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL').'/bokeke/storage/app/public',
             'visibility' => 'public',
         ],
 
@@ -79,9 +79,6 @@ return [
             'secret_key'=> env('QINIU_DOMAI'),  //SecretKey
 
             'bucket'    => env ('QINIU_DOMA'),  //Bucket名字
-
-
-
             'notify_url'=> '',  //持久化处理回调地址
         ],
     ],

@@ -19,7 +19,7 @@ class DetailsController extends Controller
      */
     public function index()
     {
-		//$ss = 
+        //$ss = 
     }
 
     /**
@@ -30,7 +30,7 @@ class DetailsController extends Controller
     public function create()
     {
         //
-		 //return view("admin.stu.create");
+         //return view("admin.stu.create");
     }
 
     /**
@@ -40,11 +40,11 @@ class DetailsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {	
-	
+    {   
+    
     }
-	
-	
+    
+    
     /**
      * Display the specified resource.
      *
@@ -52,19 +52,19 @@ class DetailsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-	{
-		//echo "111";
+    {
+        //echo "111";
 
-		//$art = Article::where("userid","=",$id)->get();
-		
-		$art = Article::where("userid","=",$id)->get();
-		
+        //$art = Article::where("userid","=",$id)->get();
+        
+        $art = Article::where("userid","=",$id)->get();
+        
 
-		$ar = contents::where("userid","=",$id)->get();	
-		$list = discusstab::where('status', 2)->get();
-		return view("home.details.index",['art'=>$art,'ar'=>$ar,'list'=>$list]);	
+        $ar = contents::where("userid","=",$id)->get(); 
+        $list = discusstab::where('status', 2)->get();
+        return view("home.details.index",['art'=>$art,'ar'=>$ar,'list'=>$list]);    
     }
-	
+    
     /**
      * Show the form for editing the specified resource.
      *
@@ -74,9 +74,9 @@ class DetailsController extends Controller
     public function edit($id)
     {
         //
-			//$list = discusstab::where('id',$id)->first(); //获取信息
-			
-			//return view("admin.discusstab.edit",["list"=>$list]);
+            //$list = discusstab::where('id',$id)->first(); //获取信息
+            
+            //return view("admin.discusstab.edit",["list"=>$list]);
     }
 
     /**
