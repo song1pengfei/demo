@@ -22,7 +22,7 @@
 										 @foreach ($list as $v)
 													<tr id="entry_7086936" class="Alt">
 														<td>
-															<a class="titlelink" href="">
+															<a class="titlelink" href="{{url('/home/details')}}/{{$v->id}}">
 																{{$v->title}}
 														</td>
 											               

@@ -20,9 +20,16 @@ class ListController extends Controller
     public function index()
     {
         //
-        $art = Article::get()->where('status',1);
-		$list = Contents::all();
-        return view("home.list.index",['art'=>$art,'list'=>$list]);
+        $art = Article::where('status', 1)->orderBy("id",'desc')->paginate(2);
+        //dd($art);
+        foreach($art as $k=>$v){
+            $art[$k]->content = Contents::where("id",$v->cid)->first()->content;
+        }
+        
+      
+        //返回试图并遍历数据
+		
+        return view("home.list.index",['art'=>$art]);
     }
 
     /**

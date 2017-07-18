@@ -49,10 +49,10 @@
                       </div>
                     </div>  
                     
-          <div class="form-group">
+                      <div class="form-group">
                       <label for="inputPassword3"  class="col-sm-2 control-label">文章内容</label>
                       <div class="col-sm-4">
-                        <textarea  readonly cols="120" rows="20" contenteditable="true">{{ $list->content }}</textarea></td>
+                        <textarea  readonly cols="120" rows="20" contenteditable="true"><?php echo htmlspecialchars_decode($list->content);?></textarea>
                       </div>
                     </div>  
            <div class="form-group">

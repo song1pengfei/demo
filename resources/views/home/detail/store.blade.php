@@ -2,7 +2,7 @@
 <!-- saved from url=(0097)https://i.cnblogs.com/PostDone.aspx?postid=7111318&actiontip=%e5%8f%91%e5%b8%83%e6%88%90%e5%8a%9f -->
 <html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>
-			博客后台管理 - 博客园</title>
+			博客文章管理 - 博客园</title>
 		                
 			<link rel="stylesheet" type="text/css" href="{{asset('homes/css/admin.css')}}">
 			<script src="{{asset('homes/js/jquery.js.下载')}}" type="text/javascript"></script>

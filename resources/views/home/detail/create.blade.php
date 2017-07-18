@@ -1,9 +1,9 @@
 
-@extends('home.detail.base');
+  @extends('home.detail.base');
 
 
   @section('content')
-  		@include('vendor.ueditor.assets')
+  @include('vendor.ueditor.assets')
 		<form method="post" action="{{URL('home/detail/store')}}" id="frmMain">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
@@ -27,13 +27,8 @@
 											<br>
 											<input name="author" type="text" maxlength="200" id="Editor_Edit_txbTitle" onblur="localPreserver.saveDraftTitle();" onkeydown="title_keydown(event);" style="width:99%;">
 										</div>
-										<div id="edit_title">
-											<b>文章摘要</b>            
-											<br>
-											<input name="abstract" type="text" maxlength="200" id="Editor_Edit_txbTitle" onblur="localPreserver.saveDraftTitle();" onkeydown="title_keydown(event);" style="width:99%;">
-										</div>
 									
-													<!-- 实例化编辑器 -->
+										<!-- 实例化编辑器 -->
 									    <script type="text/javascript">
 									        var ue = UE.getEditor('container');
 									        ue.ready(function() {

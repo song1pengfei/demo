@@ -39,7 +39,6 @@
                       <th>文章id</th>
                       <th>标题</th>
                       <th>作者</th>
-                      <th>文章摘要</th>
                       <th>发布时间</th>
                       <th>状态</th>
                       <th>操作</th>
@@ -49,9 +48,8 @@
                       <td>{{$v->id}}</td>
                       <td>{{$v->userid}}</td>
                       <td>{{$v->cid}}</td>
-                      <td>{{$v->title}}</td>
+                      <td><a href="{{url('/home/details')}}/{{$v->id}}">{{$v->title}}</td>
                       <td>{{$v->author}}</td>
-                      <td>{{$v->articleType}}</td>
                       <td>{{$v->addtime}}</td>
                       <td class="btn btn-primary btn-xs">@if ($v->status=='3')待审核 @elseif ($v->status=='1')已通过 @else ($v->status=='2')未通过 @endif</td>
         

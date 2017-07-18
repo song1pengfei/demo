@@ -5,7 +5,7 @@
 <meta content="initial-scale=1, minimum-scale=1, user-scalable=no, maximum-scale=1, width=device-width" name="viewport">
 <link rel="shortcut icon" href="http://blog.enqoo.com/wp-content/themes/enqooblog2014/favicon.ico"> 
 <link rel="pingback" href="http://blog.enqoo.com/xmlrpc.php">
-<link rel="pingback" href={{asset('liebiao/main.266c1c.css')}}>
+<link rel="pingback" href="{{asset('liebiao/main.266c1c.css')}}">
 <title>
 </title>
 
@@ -56,12 +56,21 @@ var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u752
             <div class="eq-row">
                 <div id="logo">
                     <!-- blog标题 -->
-                    <a href="http://blog.enqoo.com/">
+                    <a href="{{url('home')}}">
                         <img src="{{asset('liebiao/adminlogo.gif')}}" >
                     </a>
                     <!-- blog描述
                     网站设计 |  Photoshop 教程  | 设计技巧 -->
+                    <br/>
+
                 </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="{{url('home/personal')}}" target="_blank">个人中心</a>
+                    <br/><br/>
+                
+                                  
                 
                 <div class="nav">
                     <a href="http://blog.enqoo.com/#" id="pull"></a><!-- 响应式导航 -->
@@ -73,6 +82,7 @@ var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u752
                         </ul>
                     
                 </div>
+                <div></div>
                 <form role="search" method="get" id="searchform" action="http://blog.enqoo.com/">
         <input type="search" placeholder="搜索..." value="" name="s" id="search">
         <input type="submit" id="searchsubmit" value="搜索">
@@ -87,40 +97,46 @@ var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u752
                  
                   
                  
-                          @foreach ($list as $v)
+                   @foreach ($art as $v)
                  
                  
-                                  <div class="post" id="post-15022"><!-- post id 用于定义某篇日志 -->
+                   <div class="post" id="post-15022"><!-- post id 用于定义某篇日志 -->
                      
-                     <h1><a href="http://blog.enqoo.com/blog/2016/04/26/beautiful-vintage-design-showcase-and-resources/" title="优雅的复古设计：灵感展示及资源">{{$v->title}}</a></h1> <!-- 如果有博客，输出日志标题 -->
+                     <h1><a href="{{url('/home/details')}}/{{$v->id}}" title="优雅的复古设计：灵感展示及资源">{{$v->title}}</a></h1> <!-- 如果有博客，输出日志标题 -->
                      
                      <ul class="postmeta clearfix">
-                         <li class="date">04/26/2016</li>
-                         <li class="category"><a href="http://blog.enqoo.com/blog/category/cool-site/" rel="category tag">灵感酷站</a>, <a href="http://blog.enqoo.com/blog/category/design-resource/" rel="category tag">设计资源</a></li>
-                         <li class="comments"><a href="http://blog.enqoo.com/blog/2016/04/26/beautiful-vintage-design-showcase-and-resources/#comments">1 评论</a></li>
-                         <li></li>
-                     </ul><!-- postmeta end-->
-                     
-                     <div class="entry">
-                     <p>{{$v->author}}
-<p><img class="aligncenter size-full wp-image-15023" src="{{asset('liebiao/1-11.jpg')}}" alt="1" width="600" height="285" srcset="http://blog.enqoo.com/wp-content/uploads/2016/04/1-11.jpg 600w, http://blog.enqoo.com/wp-content/uploads/2016/04/1-11-300x143.jpg 300w" sizes="(max-width: 600px) 100vw, 600px"></p>
-<p>&nbsp;</p>
-<h3> <a href="{{url('/home/details')}}/{{$v->id}}" class="more-link">阅读全文…</a></h3>
-<!-- 输出日志内容 -->
+                        <li>{{$v->author}}</li>
+                         <li class="date">{{$v->addtime}}</li>
+                          
                         
+                     </ul><!-- postmeta end-->
+                      
+                     <div class="entry">
+                    
+                    <p><?php echo mb_substr(htmlspecialchars_decode($v['content']),0,300,"utf-8");?></p>
+                        <p>&nbsp;</p>
+                        <h3> <a href="{{url('/home/details')}}/{{$v->id}}" class="more-link">阅读全文…</a></h3>
+                        <!-- 输出日志内容 -->
+                                                
                      </div>
                      
                      <div class="tags clearfix">
-                           <a href="http://blog.enqoo.com/blog/tag/%e7%95%8c%e9%9d%a2%e8%ae%be%e8%ae%a1/" rel="tag">界面设计</a>, <a href="http://blog.enqoo.com/blog/tag/web%e8%ae%be%e8%ae%a1/" rel="tag">网页设计</a>, <a href="http://blog.enqoo.com/blog/tag/%e8%ae%be%e8%ae%a1%e7%81%b5%e6%84%9f/" rel="tag">设计灵感</a> 
+                           
                      </div>
                      
                  </div><!-- post end -->
                  @endforeach
-                                  
-                 <div class="pagination">
-                    <a href="http://blog.enqoo.com/" class="current">1</a><a href="http://blog.enqoo.com/page/2/">2</a><a href="http://blog.enqoo.com/page/3/">3</a><a href="http://blog.enqoo.com/page/4/">4</a><a href="http://blog.enqoo.com/page/5/">5</a><a href="http://blog.enqoo.com/page/2/"> 下一页 </a><a href="http://blog.enqoo.com/page/81/" class="extend" title="跳转到最后一页"> 最后一页 </a>                 </div>
+             
+                    
+                   <!--  <div class="pagination">
+                    <a href='http://blog.enqoo.com/' class='current'>1</a><a href='http://blog.enqoo.com/page/2/'>2</a><a href='http://blog.enqoo.com/page/3/'>3</a><a href='http://blog.enqoo.com/page/4/'>4</a><a href='http://blog.enqoo.com/page/5/'>5</a><a href="http://blog.enqoo.com/page/2/" > 下一页 </a><a href='http://blog.enqoo.com/page/81/' class='extend' title='跳转到最后一页'> 最后一页 </a>                 </div>   -->        
+
+
+                    <div class="btn-group" role="group" aria-label="...">
+                    {{ $art->links() }}  
+                    </div>
                  
-                                 </div><!-- mainContent end -->
+            </div><!-- mainContent end -->
              </div><!-- eq-g4x3 end -->
              
                  <div class="eq-g4">

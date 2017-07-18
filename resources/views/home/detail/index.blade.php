@@ -28,8 +28,8 @@
 
 													<tr id="entry_7086936" class="Alt">
 														<td>
-															<a class="titlelink" href="">
-																{{$v->title}}
+															<a class="titlelink" href="{{url('/home/details')}}/{{$v->id}}">{{$v->title}}</a>
+																
 														</td>
 
 													

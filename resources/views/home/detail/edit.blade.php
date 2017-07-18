@@ -16,7 +16,7 @@
 									</div>
 								<div id="Editor_Edit_Contents" style="max-width: 1200px">
 									<div id="edit_container">
-<div id="Editor_Edit_Contents">
+									<div id="Editor_Edit_Contents">
 									<div id="edit_container">
 										<div id="edit_title">
 											<b>标题</b>            
@@ -42,7 +42,7 @@
 
 									    <!-- 编辑器容器 -->
 									    <script id="container" name="content" type="text/plain">
-									    {{ $list->content }}
+									    <?php echo htmlspecialchars_decode($list['content']);?>
 									    	  
 									    </script>
 										</div>

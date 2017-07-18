@@ -202,7 +202,7 @@ header{
     background-color: #bc3e3e;
 }
 #logo a img{
-    padding: 20px;
+    padding: 0px;
 }
 .wrap{
     background: #fff;
@@ -396,18 +396,44 @@ ol.children{
     overflow: hidden;
    margin-bottom: 30px;
 }
-.pagination a{
+.pagination li{
+    color: #000;
+    
+    
+    margin: 0 7px 10px 0;
+    float:left;
+}
+.pagination .disabled{
+     color: #000;
+    border: 1px #ccc solid;
+    padding: 8px 20px;
+    margin: 0 7px 10px 0;
+    float:left;
+}
+.pagination .active{
     color: #000;
     border: 1px #ccc solid;
     padding: 8px 20px;
     margin: 0 7px 10px 0;
     float:left;
 }
-.pagination a:hover,
-.pagination a.current {
+.pagination li a{
+    color: #000;
+    border: 1px #ccc solid;
+    padding: 8px 20px;
+    margin: 0 7px 10px 0;
+    float:left;
+}
+.pagination li a:hover,
+.pagination li a.current {
     color: #fff;
     background: #ff0000;
 	border: 1px solid #ff0000;
+}
+.pagination .disabled span.current {
+    color: #fff;
+    background: #ff0000;
+    border: 1px solid #ff0000;
 }
 /*----- 文章上下篇 -----*/
 .post-pagination{

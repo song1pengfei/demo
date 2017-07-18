@@ -23,7 +23,7 @@ class DetailController extends Controller
 
         //获取Article的数据
 
-        $res = Article::orderBy("id",'desc')->paginate(15); //15条每页浏览
+        $res = Article::orderBy("id",'desc')->paginate(3); //15条每页浏览
         //返回试图并遍历数据
         return view("home.detail.index",['res'=>$res]);
 

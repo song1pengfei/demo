@@ -53,7 +53,7 @@
 发布于:{{$ve->addtime}}<br/>
 @endforeach
 @foreach($ar as $v)
-内容:{{$v->content}}
+内容:<?php echo mb_substr(htmlspecialchars_decode($v['content']),0,500,"utf-8");?>
 @endforeach	
 <div id="EntryTag"></div>
 <div id="blog_post_info"><div id="green_channel">

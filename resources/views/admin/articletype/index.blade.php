@@ -43,7 +43,7 @@
                     @foreach($list as $v)
                     <tr>
                       <td>{{$v->id}}</td>
-                      <td>{{$v->name}}</td>
+                      <td>{{$v->title}}</td>
                       
                       <td><button onclick="doDel({{$v->id}})" class="btn btn-xs btn-danger">删除</button> 
                      

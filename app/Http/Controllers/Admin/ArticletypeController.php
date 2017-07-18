@@ -25,7 +25,7 @@ class ArticletypeController extends Controller
         foreach($list as &$v){
             $m = substr_count($v->path,","); //获取path中的逗号
             //生成缩进
-            $v->name = str_repeat("&nbsp;",($m-1)*8)."|--".$v->name;
+            $v->title = str_repeat("&nbsp;",($m-1)*8)."|--".$v->title;
         }
         return view("admin.Articletype.index",['list'=>$list]);
     }
@@ -43,7 +43,7 @@ class ArticletypeController extends Controller
         foreach($list as &$v){
             $m = substr_count($v->path,","); //获取path中的逗号
             //生成缩进
-            $v->name = str_repeat("&nbsp;",($m-1)*8)."|--".$v->name;
+            $v->name = str_repeat("&nbsp;",($m-1)*8)."|--".$v->title;
         }
         return view("admin.Articletype.create",['list'=>$list]);
     }
@@ -58,7 +58,7 @@ class ArticletypeController extends Controller
     {
         $db = new Articletype;
        //获取要添加的数据
-        $data = $request->only("name",'pid');
+        $data = $request->only("title",'pid',"path");
         $pid = $data['pid'];
         if($pid==0){
             $data['path']="0,";

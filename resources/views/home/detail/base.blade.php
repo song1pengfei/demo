@@ -30,18 +30,12 @@
 						<tr>
 							<td id="Header" colspan="2">
 								<div id="SiteNav">
-									<a href="http://home.cnblogs.com/set/account/" target="_blank">个人中心</a>
+									<a href="{{url('home/list')}}" target="_blank">{{session('homeuser')->account}}</a>
 								&nbsp;</div>
-								<div id="BlogTitle">
-									 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					                  <img src="{{asset('myadmin/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image"/>
-					                  <span class="hidden-xs">{{session('homeuser')->account}}</span>
-					                </a>
-									
-								</div>
+								
 								<div id="SiteTitle">
 
-									<a id="TitleLink" href="{{url('home/list')}}"><img src="{{asset('images/adminlogo.gif')}}" alt=""></a>
+									<a id="TitleLink" href="{{url('home')}}"><img src="{{asset('images/adminlogo.gif')}}" alt=""></a>
 
 								</div>
 
@@ -60,15 +54,9 @@
 									<li>
 										<a href="{{url('home/detail')}}" id="TabArticles">文章</a>
 									</li>
-									<li>
-										<a href="https://i.cnblogs.com/Feedback.aspx" id="TabFeedback">评论</a>
-									</li>
-									<li id="FilesTab">
-										<a href="https://i.cnblogs.com/Files.aspx" id="TabFiles">文件</a>
-									</li>
 									
 									<li>
-										<a href="https://i.cnblogs.com/Configure.aspx" id="TabConfigure">设置</a>
+										<a href="{{url('home/personal')}}" id="TabConfigure">设置</a>
 									</li>
 								</ul>
 								<div id="SubNav">

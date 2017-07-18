@@ -73,7 +73,7 @@ class ArticleController extends Controller
     public function edit($id)
     {
         //
-        $list = Contents::where('id',$id)->find($id); //获取信息
+        $list = Contents::where('id',$id)->first(); //获取信息
        // return $list;
         
         return view("admin.Contents.index",["list"=>$list]);
