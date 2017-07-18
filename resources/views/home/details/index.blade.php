@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<!-- saved from url=(0061)http://www.cnblogs.com/f-ck-need-u/p/7100336.html#commentform -->
-<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="{{url('js/analytics.js')}}"></script><script type="text/javascript" src="{{url('js/encoder.js')}}"></script>
+<!-- saved from URL=(0061)http://www.cnblogs.com/f-ck-need-u/p/7100336.html#commentform -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="{{URL('js/analytics.js')}}"></script><script type="text/javascript" src="{{URL('js/encoder.js')}}"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>详情评论列表</title>
-<link type="text/css" rel="stylesheet" href="{{url('css/blog-common.css')}}">
-<link id="MainCss" type="text/css" rel="stylesheet" href="{{url('css/bundle-darkgreentrip.css')}}">
-<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="{{url('css/bundle-darkgreentrip-mobile.css')}}">
+<link type="text/css" rel="stylesheet" href="{{URL('css/blog-common.css')}}">
+<link id="MainCss" type="text/css" rel="stylesheet" href="{{URL('css/bundle-darkgreentrip.css')}}">
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="{{URL('css/bundle-darkgreentrip-mobile.css')}}">
 <link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/f-ck-need-u/rss">
 <link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/f-ck-need-u/rsd.xml">
 <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/f-ck-need-u/wlwmanifest.xml">
-<script src="{{url('js/jquery.js')}}" type="text/javascript"></script>  
-<script src="{{url('js/jquery-1.8.3.min.js')}}" type="text/javascript"></script>  
+<script src="{{URL('js/jquery.js')}}" type="text/javascript"></script>  
+<script src="{{URL('js/jquery-1.8.3.min.js')}}" type="text/javascript"></script>  
 <script type="text/javascript">var currentBlogApp = 'f-ck-need-u', cb_enable_mathjax=false;var isLogined=true;</script>
 <!--可能出错 暂时注销  by桑大亨
-<script src="{{url('js/blog-common.js')}}" type="text/javascript"></script>
+<script src="{{URL('js/blog-common.js')}}" type="text/javascript"></script>
 -->
 
 </head>
@@ -26,8 +26,8 @@
 	<!--end: blogTitle 博客的标题和副标题 -->
 	<div id="navigator">		
 <ul id="navList">
-<li><a id="blog_nav_sitehome" class="menu" href="{{url('home')}}">博客园</a></li>
-<li><a id="blog_nav_myhome" class="menu" href="{{url('home/list')}}">首页</a></li>
+<li><a id="blog_nav_sitehome" class="menu" href="{{URL('home')}}">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="{{URL('home/list')}}">列表</a></li>
 <li></li>
 </ul>
 		<div class="blogStats">			
@@ -60,8 +60,8 @@
 <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(7100336,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
 <a id="green_channel_follow" onclick="follow(&#39;1e7fa90d-decd-e411-b908-9dcfd8948a71&#39;);" href="javascript:void(0);">关注我</a>
 <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
-<a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="{{url('images/icon_weibo_24.png')}}" alt=""></a>
-<a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="{{url('images/wechat.png')}}" alt=""></a>
+<a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="{{URL('images/icon_weibo_24.png')}}" alt=""></a>
+<a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="{{URL('images/wechat.png')}}" alt=""></a>
 </div>
 </div>	
 <div class="clear"></div>
@@ -121,7 +121,7 @@
 </p>
 </form><br/>
 <div style="width:500px;hight:10px;padding-left:200px">
-<button><a href="{{url('home')}}">退出</a></button>
+<button><a href="{{URL('home')}}">退出</a></button>
 <button onclick="return DoSubmit()" value="">提交</button>
 </div>
 </div>
@@ -129,7 +129,7 @@
  function DoSubmit(){
 	 $("#answertable").show();
 	 $.ajax({
-	  url:'{{url('home/discusstab')}}', 
+	  url:'{{URL('home/discusstab')}}', 
 	  type:'post',
 	  data:$("#dd").serialize(),
 	  dataType:'json',

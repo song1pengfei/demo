@@ -97,13 +97,13 @@ var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u752
                      <ul class="postmeta clearfix">
                          <li class="date">04/26/2016</li>
                          <li class="category"><a href="http://blog.enqoo.com/blog/category/cool-site/" rel="category tag">灵感酷站</a>, <a href="http://blog.enqoo.com/blog/category/design-resource/" rel="category tag">设计资源</a></li>
-                         <li class="comments"><a href="http://blog.enqoo.com/blog/2016/04/26/beautiful-vintage-design-showcase-and-resources/#comments">1 评论</a></li>
+                         <li class="comments"><a href="{{URL('home/details')}}">1 评论</a></li>
                          <li></li>
                      </ul><!-- postmeta end-->
                      
                      <div class="entry">
                      <p>{{$v->author}}
-<p><img class="aligncenter size-full wp-image-15023" src="{{asset('liebiao/1-11.jpg')}}" alt="1" width="600" height="285" srcset="http://blog.enqoo.com/wp-content/uploads/2016/04/1-11.jpg 600w, http://blog.enqoo.com/wp-content/uploads/2016/04/1-11-300x143.jpg 300w" sizes="(max-width: 600px) 100vw, 600px"></p>
+<p><img src="{{asset('liebiao/1-11.jpg')}}" alt="1" width="600" height="285"  sizes="(max-width: 600px) 100vw, 600px"></p>
 <p>&nbsp;</p>
 <h3> <a href="{{url('/home/details')}}/{{$v->id}}" class="more-link">阅读全文…</a></h3>
 <!-- 输出日志内容 -->
