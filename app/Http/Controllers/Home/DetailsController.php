@@ -58,7 +58,6 @@ class DetailsController extends Controller
         //$art = Article::where("userid","=",$id)->get();
         
         $art = Article::where("id","=",$id)->get();
-        
 
         $ar = contents::where("id","=",$id)->get(); 
         $list = discusstab::where('status', 2)->get();

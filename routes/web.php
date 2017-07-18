@@ -34,8 +34,11 @@ Route::get('/admin/getcode',"Admin\LoginController@getCode");//加载验证码
 
 //建立前台路由组  
 Route::group(['prefix' => 'home','middleware' => 'home'], function () {
+	
 	Route::get('/',"Home\IndexController@index");//加载前台首页模板
-
+	//Route::get('/',"Home\IndexController@show");//加载前台首页模板
+	//Route::resource('/{id}',"Home\IndexController");//加载前台首页模板
+	
     Route::get('personal',"Home\PersonalController@index");//加载前台个人中心界面
     Route::get('list',"Home\ListController@index");//加载前台文章列表页
 	Route::resource('detail',"Home\DetailController");//加载前台文章详情页
