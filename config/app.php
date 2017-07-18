@@ -185,7 +185,7 @@ return [
 		iscms\Alisms\AlidayuServiceProvider::class,
 		zgldh\QiniuStorage\QiniuFilesystemServiceProvider::class,
 		Overtrue\LaravelUEditor\UEditorServiceProvider::class,
-        Overtrue\LaravelFilesystem\Qiniu\QiniuStorageServiceProvider::class,
+        //Overtrue\LaravelFilesystem\Qiniu\QiniuStorageServiceProvider::class,
 
 
     ],

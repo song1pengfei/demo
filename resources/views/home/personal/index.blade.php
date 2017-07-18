@@ -80,7 +80,7 @@
 
 					</td>
 				</tr> 
-				<tr>
+				<!--<tr>
 					<td class="setting-title">性别</td> 
 					<td>
 
@@ -89,7 +89,7 @@
 						<input type="radio" name="sex" value="w">女
 
 					</td>
-				</tr> 
+				</tr> -->
 				
 
 				
