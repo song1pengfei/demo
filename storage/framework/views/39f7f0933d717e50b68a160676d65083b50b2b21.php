@@ -30,7 +30,7 @@
                    <span id="span_userinfo"> <?php if(session('homeuser')): ?> <a href="<?php echo e(url('home/personal')); ?>"> <?php echo e(session('homeuser')->account); ?></a>·<a id="user_nav_blog_link" href="<?php echo e(url('home/detail')); ?>">我的博客</a>·<a href="/home/logout">退出</a> <?php else: ?> [<a href="<?php echo e(URL('home/login')); ?>"> 登陆 </a>·<a href="<?php echo e(url('home/register')); ?>">注册</a>]</span><?php endif; ?>
 
 
-                </div>
+                *</div>
                 
                 <div class="clear"></div>
                 
@@ -92,15 +92,15 @@
 </div>    
  
 <div class="post_item_body">
-	<h3><a class="titlelnk" href="" target="_blank"><?php echo e($v->title); ?></a></h3>    
+	<h3><a class="titlelnk" href="" target="_blank">标题:<?php echo e($v->title); ?></a></h3>    
         <p class="post_item_summary">
-            <a href="http://www.cnblogs.com/sunsky303/" target="_blank">
-                <img width="48" height="48" class="pfs" src="<?php echo e(url('images/20170329141435.png')); ?>" alt="">
-               </a>    摘要 版本格式：主版本号.次版本号.修订号，版本号递增规则如下： 主版本号：当你做了不兼容的 API 修改， 次版本号：当你做了向下兼容的功能性新增， 修订号：当你做了向下兼容的问题修正。 先行版本号及版本编译信息可以加到“主版本号.次版本号.修订号”的后面，作为延伸。 简介 在软件管理的领域里存在 ...
+           
+			   <?php echo mb_substr(htmlspecialchars_decode($v['content']),0,500,"utf-8");?>
+			  
         </p>              
        <div class="post_item_foot">                    
 
-            <a href="" class="lightblue"><?php echo e($v->author); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>发布于 <?php echo e($v->addtime); ?>
+            <a href="" class="lightblue">作者:<?php echo e($v->author); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>发布于<?php echo e($v->addtime); ?>
 
 
             

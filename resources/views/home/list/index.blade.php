@@ -107,8 +107,9 @@ var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u752
                      <ul class="postmeta clearfix">
                         <li>{{$v->author}}</li>
                          <li class="date">{{$v->addtime}}</li>
-                          
-                        
+                         <li class="category"> </li>
+                         <li></li>
+
                      </ul><!-- postmeta end-->
                       
                      <div class="entry">
@@ -117,7 +118,8 @@ var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u752
                         <p>&nbsp;</p>
                         <h3> <a href="{{url('/home/details')}}/{{$v->id}}" class="more-link">阅读全文…</a></h3>
                         <!-- 输出日志内容 -->
-                                                
+              
+
                      </div>
                      
                      <div class="tags clearfix">
@@ -139,17 +141,19 @@ var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u752
             </div><!-- mainContent end -->
              </div><!-- eq-g4x3 end -->
              
-                 <div class="eq-g4">
-    <div class="sidebar">
-    <ul>
-        <li id="text-2" class="widget widget_text">			<div class="textwidget"><div class="sidebar-banner">
+                <div class="eq-g4">
+                <div class="sidebar">
+                <ul>
+                    <li id="text-2" class="widget widget_text">			
+                    <div class="textwidget"><div class="sidebar-banner">
 
-</div></div>
-		</li>
+                </div>
+                </div>
+            		</li>
 
-    </ul>
-    </div><!-- sidebar end -->
-</div>             
+                </ul>
+                </div><!-- sidebar end -->
+            </div>             
          </div><!-- eq-row end -->
          <footer>
 Copyright © 2017  <a href="http://www.enqoo.com/" target="_blank">Enqoo Inc.</a> All Rights Reserved.

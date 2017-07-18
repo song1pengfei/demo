@@ -32,7 +32,7 @@
                     <div class="form-group">
                       <label for="inputEmail3" class="col-sm-2 control-label">类别名称</label>
                       <div class="col-sm-4">
-                        <input type="text" name="name" class="form-control" placeholder="角色名称">
+                        <input type="text" name="title" class="form-control" placeholder="角色名称">
                       </div>
                     </div>
                    
@@ -43,7 +43,7 @@
                         <option value="0"><span>&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;/&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;</span></option>
                         
                         @foreach($list as $v)
-                            <option value="{{$v->id}}">{{$v->name}}</option>
+                            <option value="{{$v->id}}">{{$v->title}}</option>
                         @endforeach
                     </select>
                        

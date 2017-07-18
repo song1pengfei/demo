@@ -38,10 +38,20 @@ class DiscusstabController extends Controller
      */
     public function store(Request $request)
     {
-
+		
+		
         $db = new Discusstab;        
 		//$art = article::find(1);
-       //获取要添加的数据   
+       //获取要添加的数据 
+	   
+		/*  if(session()==""){
+            return view("home.login");
+            return redirect('home/login');
+        }else{
+            $request->session()->forget('homeuser');
+            return redirect('home/login');
+        }   
+		 */
         $data = $request->only("content","articleid","disTime");
         $data["status"]=1;
 		$id = $db->insertGetId($data);

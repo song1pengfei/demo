@@ -49,7 +49,7 @@
               <div class="user-info">
                 <div class="user-pass">
                 
-                  <form id="fm1" action="{{url('home/dologin')}}" method="post">
+                  <form id="fm1" action="{{URL('home/dologin')}}" method="post">
                      <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                     <input id="username" name="account" tabindex="1" placeholder="输入用户名/邮箱/手机号" class="user-name" type="text" value="">
                     

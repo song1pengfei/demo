@@ -6,6 +6,7 @@ use App\Model\Userinfo;
 use Illuminate\Http\Request;
 use App\Model\discusstab;
 use App\Http\Controllers\Controller;
+use App\Model\contents;
 //use App\Http\Controllers\Home\userinfo;
 class IndexController extends Controller
 {
@@ -16,13 +17,20 @@ class IndexController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-
-        $art = Article::get()->where('status',1);
-
-		$list = discusstab::get();
-		return view("home.index",['art'=>$art,'list'=>$list]);
-
+    {         
+		//$art = Article::where('status', 1)->get();
+        $art = Article::where('status', 1)->orderBy("id",'desc')->paginate(2);
+		 //$art = Article::where('status', 1)->get();
+        //dd($art);
+        foreach($art as $k=>$v){
+            $art[$k]->content = Contents::where("id",$v->cid)->first()->content;
+        }
+		
+		
+		//$list = \DB::table('contents')->select("content")->get();
+		
+		 return view("home.index",['art'=>$art]);
+  
     }
 
     /**
@@ -56,6 +64,7 @@ class IndexController extends Controller
     public function show($id)
     {
         //
+		
     }
 
     /**

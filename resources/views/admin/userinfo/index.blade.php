@@ -31,7 +31,7 @@
                       <th>电话</th>
 
                       <th>年龄</th> 
-                      <th>性别</th>
+                      <!--<th>性别</th>-->
                       <th>图片</th>
                       
                       <th>邮箱</th>
@@ -46,7 +46,7 @@
                       <td>{{$v->account}}</td> 
                       <td>{{$v->phone}}</td>
                       <td>{{$v->age}}</td>       
-                      <td>{{$v->sex}}</td>
+                      <!--<td>{{$v->sex}}</td>-->
                       
 
                       <td>{{$v->pic}}</td>
